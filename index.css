@@ -1,0 +1,260 @@
+body {
+    margin: 0;
+    background-color: #008080;
+    overflow: hidden;
+    text-align: center;
+    font-family: Helvetica;
+}
+
+.col1 {
+    width: 4.4%;
+    height: 93.5vh;
+    margin-left: 2%;
+    margin-top: 1%;
+    color: #fff;
+}
+
+.folder {
+    cursor: default;
+    margin-bottom: 70%;
+}
+
+.folder:hover{
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: 1s ease;
+    
+}
+
+.col1 img {
+    width: 150%;
+}
+
+#folder-window {
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    width: 70%;
+    height: 50%;
+    background-color: rgb(255, 255, 255);
+    display: none;
+}
+
+.window-bar {
+    width: 100%;
+    height: 10%;
+    background-color: #adadad;
+}
+
+#close-window {
+    display: grid;
+    place-items: center;
+    position: relative;
+    left: 94%;
+    right: 2%;
+    width: 5%;
+    height: 100%;
+    cursor: default;
+}
+
+#folder-content {
+    display: flex;
+    -ms-flex-align: start;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 95%;
+    height: 85%;
+    color: #000;
+}
+
+#folder-content div {
+    display: block;
+    width: 20%;
+    height: 20%;
+    margin-top: 10%;
+    margin-left: 15%;
+}
+
+.menu {
+    display: none;
+    position: absolute;
+    bottom: 5.5%;
+    left: .5%;
+    width: 30%;
+    background-color: #ADADAD;
+}
+
+.menu-item {
+    margin: 0px;
+    margin-top: 0;
+    position: absolute;
+    display: block;
+    padding: 0px;
+    bottom: 40px;
+    width: 205px;
+    background-color: #B8B8B8;
+    border-right: 2px solid #666;
+    border-left: 2px solid #999;
+    border-top: 2px solid #999;
+    border-bottom: 2px solid #666;
+    overflow: hidden;
+}
+
+
+.menu-item:hover {
+    background-color: gray;
+}
+
+.menu-item img {
+    width: 90%;
+}
+
+footer {
+    display: flex;
+    background-color: #ADADAD;
+    height: 6vh;
+}
+
+#start-menu-btn {
+    margin: auto auto auto .5%;
+    width: 15%;
+    height: 60%;
+    border-style: solid;
+    border-color: lightgray rgba(0, 0, 0, 0.3) rgba(0, 0, 0, 0.3) lightgray;
+    cursor: default;
+}
+
+#start-menu-btn img {
+    width: 30%;
+    height: 100%;
+    border: none;
+}
+
+#start-menu-btn span {
+    position: relative;
+    bottom: 25%;
+}
+
+.time {
+    position: relative;
+    right: 1%;
+}
+
+.time span {
+    position: relative;
+    top: 30%;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.3) lightgray lightgray rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+h2{
+    color: black;
+}
+
+.csharpcontents p{
+    color: black; 
+    height: 80%;
+    width: 70%;
+    text-align: center;
+    display: inline; 
+}
+.nodejs p {
+    color: black;
+    height: 80%;
+    width: 70%;
+    text-align: center;
+    display: inline;
+}
+.python p {
+    color: black;
+    height: 80%;
+    width: 70%;
+    text-align: center;
+    display: inline;
+}
+.html p {
+    color: black;
+    height: 80%;
+    width: 70%;
+    text-align: center;
+    display: inline;
+}
+.css p {
+    color: black;
+    height: 80%;
+    width: 70%;
+    text-align: center;
+    display: inline;
+}
+.php p {
+    color: black;
+    height: 80%;
+    width: 70%;
+    text-align: center;
+    display: inline;
+}
+.eyup p {
+    color: black;
+    display: inline;
+}
+.eyup {
+    width: 30%;
+    margin: auto;
+    display: inline;
+}
+
+
+
+@media (min-width: 600px) {
+    #folder-content-img {
+        width: 100%;
+    }
+    #close-window {
+        left: 95%;
+    }
+    #start-menu-btn {
+        width: 10%;
+    }
+    .menu {
+        width: 20%;
+    }
+}
+
+@media (min-width: 700px) {
+    .col1 img {
+        width: 100%;
+    }
+    #folder-content div {
+        margin-left: 5%;
+    }
+    .menu {
+        width: 15%;
+    }
+
+}
+
+@media (min-width: 900px) {
+    .col1 {
+        height: 92vh;
+    }
+    .col1 img {
+        width: 70%;
+    }
+    #folder-window {
+        width: 70%;
+        height: 70%;
+    }
+    #folder-content div {
+        margin-left: 0;
+    }
+    .menu {
+        width: 10%;
+    }
+    #start-menu-btn {
+        width: 6%;
+    }
+    
+}
